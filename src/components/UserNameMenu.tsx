@@ -1,4 +1,3 @@
-import React from 'react'
 import { CircleUserRound } from "lucide-react";
 import {
   DropdownMenu,
