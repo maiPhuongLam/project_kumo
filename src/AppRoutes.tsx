@@ -3,7 +3,6 @@ import Layout from "./layouts/layout"
 import HomePage from "./pages/HomePage"
 import AuthCallbackPage from "./pages/AuthCallbackPage"
 import UserProfilePage from "./pages/UserProfilePage"
-import DropdownAddress from "./pages/DropdownAddress"
 import ProtectedRoute from "./auth/ProtectedRoute"
 
 const AppRoutes = () => {
@@ -17,7 +16,7 @@ const AppRoutes = () => {
 					</Layout> 
 				}/>
 			<Route path="/auth-callback" element={ <AuthCallbackPage/> }/>
-			<Route path="/drop-down" element={ <DropdownAddress/> }/>
+			{/* <Route path="/drop-down" element={ <DropdownAddress/> }/> */}
 			<Route element={< ProtectedRoute />}>
 				<Route 
 					path="/user-profile" 
