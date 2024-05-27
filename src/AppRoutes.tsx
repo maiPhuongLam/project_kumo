@@ -4,6 +4,8 @@ import HomePage from "./pages/HomePage"
 import AuthCallbackPage from "./pages/AuthCallbackPage"
 import UserProfilePage from "./pages/UserProfilePage"
 import ProtectedRoute from "./auth/ProtectedRoute"
+import AuthenticationPage from "./pages/AuthenticationPage"
+import TimeAndPositionBooking from "./pages/TimeAndPositionBooking"
 
 const AppRoutes = () => {
 	return (
@@ -24,6 +26,21 @@ const AppRoutes = () => {
 					<Layout>
 						<UserProfilePage />
 					</Layout>  }
+				/>
+				<Route 
+					path="/authentication" 
+					element={ 
+					<Layout>
+						<AuthenticationPage />
+					</Layout>  }
+				/>
+				<Route 
+					path="/time-and-position" 
+					element={ 
+					<Layout>
+						<TimeAndPositionBooking />
+					</Layout>  
+					}
 				/>
 			</Route>
 			<Route path="/*" element={ <Navigate to="/" /> }/>
